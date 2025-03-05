@@ -1,0 +1,58 @@
+[gd_scene load_steps=10 format=3 uid="uid://dfbw14no5cb26"]
+
+[ext_resource type="Texture2D" uid="uid://cpyemftfvr3ps" path="res://人物关系图背景（2）.png" id="1_6givm"]
+[ext_resource type="Texture2D" uid="uid://bgsx1ujk3odwj" path="res://软设人物2/1富商(1).png" id="2_t1gwx"]
+[ext_resource type="Texture2D" uid="uid://dnfk8rgapq16e" path="res://软设人物2/2妻子（1）.png" id="3_b1l7v"]
+[ext_resource type="Texture2D" uid="uid://0mfrm7cf8kwd" path="res://软设人物2/4女儿金伊一(1).png" id="4_2uqnq"]
+[ext_resource type="Texture2D" uid="uid://co17abvea8ja3" path="res://软设人物2/9宋延好友（1）(1)(1).png" id="5_4g2b4"]
+[ext_resource type="Texture2D" uid="uid://crbulvkxc713b" path="res://软设人物2/3合伙人(1).png" id="6_rtiml"]
+[ext_resource type="Texture2D" uid="uid://dlv5lfto7ht1j" path="res://软设人物2/5女儿男友(1).png" id="7_wvpwi"]
+[ext_resource type="Texture2D" uid="uid://cx6pkyutta5s4" path="res://软设人物2/6管家(1).png" id="8_ghv6f"]
+[ext_resource type="Texture2D" uid="uid://hanqg7eioo76" path="res://软设人物2/7女佣(1).png" id="9_jpb4l"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="人物关系图背景（2）" type="Sprite2D" parent="."]
+position = Vector2(900, 675)
+scale = Vector2(1.758, 1.758)
+texture = ExtResource("1_6givm")
+
+[node name="1富商(1)" type="Sprite2D" parent="."]
+position = Vector2(835, 551)
+scale = Vector2(0.400369, 0.400369)
+texture = ExtResource("2_t1gwx")
+
+[node name="2妻子（1）" type="Sprite2D" parent="."]
+position = Vector2(631, 276)
+scale = Vector2(0.201953, 0.201953)
+texture = ExtResource("3_b1l7v")
+
+[node name="4女儿金伊一(1)" type="Sprite2D" parent="."]
+position = Vector2(423, 539)
+scale = Vector2(0.313471, 0.313471)
+texture = ExtResource("4_2uqnq")
+
+[node name="9宋延好友（1）(1)(1)" type="Sprite2D" parent="."]
+position = Vector2(441, 1177)
+scale = Vector2(0.220703, 0.220703)
+texture = ExtResource("5_4g2b4")
+
+[node name="3合伙人(1)" type="Sprite2D" parent="."]
+position = Vector2(990.438, 270.438)
+scale = Vector2(0.211792, 0.211792)
+texture = ExtResource("6_rtiml")
+
+[node name="5女儿男友(1)" type="Sprite2D" parent="."]
+position = Vector2(442, 857)
+scale = Vector2(0.397581, 0.397581)
+texture = ExtResource("7_wvpwi")
+
+[node name="6管家(1)" type="Sprite2D" parent="."]
+position = Vector2(1197, 547)
+scale = Vector2(0.245605, 0.245605)
+texture = ExtResource("8_ghv6f")
+
+[node name="7女佣(1)" type="Sprite2D" parent="."]
+position = Vector2(817, 924)
+scale = Vector2(0.392972, 0.392972)
+texture = ExtResource("9_jpb4l")

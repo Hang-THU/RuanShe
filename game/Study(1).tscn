@@ -1,0 +1,65 @@
+[gd_scene load_steps=11 format=3 uid="uid://ql4idqiltff7"]
+
+[ext_resource type="Texture2D" uid="uid://bevth4uryywk7" path="res://书房（1）.png" id="1_t8f33"]
+[ext_resource type="Texture2D" uid="uid://bgirhqwlp7owt" path="res://人物关系图按钮(3).bmp" id="2_7f31x"]
+[ext_resource type="Texture2D" uid="uid://b548qmeyvhp3l" path="res://人物关系图按钮.bmp" id="2_e6rp5"]
+[ext_resource type="Script" path="res://CharacterRelationshipButton.cs" id="3_ykxn1"]
+[ext_resource type="Texture2D" uid="uid://u7q0115w5mds" path="res://线索库(1)(2).bmp" id="5_yg8wy"]
+[ext_resource type="Texture2D" uid="uid://1qy86odbjse5" path="res://线索库(1)(1).bmp" id="6_3y0xq"]
+[ext_resource type="Script" path="res://ClueLibraryButton.cs" id="7_2ksby"]
+[ext_resource type="Texture2D" uid="uid://cd8vkogaqosf" path="res://地图(1)(2).bmp" id="7_8abay"]
+[ext_resource type="Texture2D" uid="uid://cggmwoq3tq18d" path="res://地图(1)(1).bmp" id="8_1yto4"]
+[ext_resource type="Script" path="res://MapButton.cs" id="10_rnvp1"]
+
+[node name="书房（1）" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="书房（1）" type="Sprite2D" parent="."]
+position = Vector2(900, 675)
+scale = Vector2(1.563, 1.563)
+texture = ExtResource("1_t8f33")
+
+[node name="Character_Relationship" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1379.0
+offset_top = 1214.0
+offset_right = 1793.0
+offset_bottom = 1628.0
+scale = Vector2(0.3, 0.3)
+tooltip_text = "人物关系图"
+texture_normal = ExtResource("2_7f31x")
+texture_hover = ExtResource("2_e6rp5")
+script = ExtResource("3_ykxn1")
+
+[node name="Clue_Library" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1516.0
+offset_top = 1214.0
+offset_right = 1930.0
+offset_bottom = 1629.0
+scale = Vector2(0.3, 0.3)
+tooltip_text = "线索库"
+texture_normal = ExtResource("5_yg8wy")
+texture_hover = ExtResource("6_3y0xq")
+script = ExtResource("7_2ksby")
+
+[node name="Map" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1656.0
+offset_top = 1214.0
+offset_right = 2048.0
+offset_bottom = 1606.0
+scale = Vector2(0.317, 0.317)
+tooltip_text = "地图"
+texture_normal = ExtResource("7_8abay")
+texture_hover = ExtResource("8_1yto4")
+script = ExtResource("10_rnvp1")
+
+[connection signal="pressed" from="Character_Relationship" to="Character_Relationship" method="ChangeScene"]
+[connection signal="pressed" from="Clue_Library" to="Clue_Library" method="ChangeScene"]
+[connection signal="pressed" from="Map" to="Map" method="ChangeScene"]

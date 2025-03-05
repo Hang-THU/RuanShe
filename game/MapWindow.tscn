@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://yqirrnhff3ei"]
+
+[ext_resource type="Texture2D" uid="uid://d2ljhc1kxrqk1" path="res://人物关系图、线索库、地图背景（1）.png" id="1_vbdol"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="BackGround" type="Sprite2D" parent="."]
+position = Vector2(900, 675)
+scale = Vector2(0.439, 0.439)
+texture = ExtResource("1_vbdol")
