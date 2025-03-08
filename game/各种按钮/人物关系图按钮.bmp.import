@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bgirhqwlp7owt"
-path="res://.godot/imported/人物关系图按钮(3).bmp-e479c2ee6d2adcac12c4204f3fe096f1.ctex"
+uid="uid://b548qmeyvhp3l"
+path="res://.godot/imported/人物关系图按钮.bmp-f48599ec6674d3d154a17c752ebe5132.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://人物关系图按钮(3).bmp"
-dest_files=["res://.godot/imported/人物关系图按钮(3).bmp-e479c2ee6d2adcac12c4204f3fe096f1.ctex"]
+source_file="res://各种按钮/人物关系图按钮.bmp"
+dest_files=["res://.godot/imported/人物关系图按钮.bmp-f48599ec6674d3d154a17c752ebe5132.ctex"]
 
 [params]
 

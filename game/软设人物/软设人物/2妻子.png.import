@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://u7q0115w5mds"
-path="res://.godot/imported/线索库(1)(2).bmp-2f080e3947ecc61f8d9e54b76142ea67.ctex"
+uid="uid://cmoxuiy1ee3kt"
+path="res://.godot/imported/2妻子.png-81dc114d58033ca78067b08ebb81a0a4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://线索库(1)(2).bmp"
-dest_files=["res://.godot/imported/线索库(1)(2).bmp-2f080e3947ecc61f8d9e54b76142ea67.ctex"]
+source_file="res://软设人物/软设人物/2妻子.png"
+dest_files=["res://.godot/imported/2妻子.png-81dc114d58033ca78067b08ebb81a0a4.ctex"]
 
 [params]
 
