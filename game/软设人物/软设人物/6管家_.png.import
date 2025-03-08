@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cggmwoq3tq18d"
-path="res://.godot/imported/地图(1)(1).bmp-39c6084291cbf3d0b52d48cb4d77461e.ctex"
+uid="uid://cxwcm8ynh8qy"
+path="res://.godot/imported/6管家_.png-76978704b343a28720bddfca7f97f389.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://地图(1)(1).bmp"
-dest_files=["res://.godot/imported/地图(1)(1).bmp-39c6084291cbf3d0b52d48cb4d77461e.ctex"]
+source_file="res://软设人物/软设人物/6管家_.png"
+dest_files=["res://.godot/imported/6管家_.png-76978704b343a28720bddfca7f97f389.ctex"]
 
 [params]
 

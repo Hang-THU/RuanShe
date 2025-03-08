@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b548qmeyvhp3l"
-path="res://.godot/imported/人物关系图按钮.bmp-00d6ca7af37c0e6285129f0b1d3b00fe.ctex"
+uid="uid://xb2ogl43smbf"
+path="res://.godot/imported/1富商.png-6e2d20cb1b16a56b9e21626366e6fb4a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://人物关系图按钮.bmp"
-dest_files=["res://.godot/imported/人物关系图按钮.bmp-00d6ca7af37c0e6285129f0b1d3b00fe.ctex"]
+source_file="res://软设人物/软设人物/1富商.png"
+dest_files=["res://.godot/imported/1富商.png-6e2d20cb1b16a56b9e21626366e6fb4a.ctex"]
 
 [params]
 

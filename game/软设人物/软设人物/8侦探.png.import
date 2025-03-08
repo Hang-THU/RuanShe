@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://1qy86odbjse5"
-path="res://.godot/imported/线索库(1)(1).bmp-1e5e71b2f8ef1d153171485590ef1f02.ctex"
+uid="uid://cmjr1ak1gobcl"
+path="res://.godot/imported/8侦探.png-29ebd9d66b1bd612fe691fad4b855544.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://线索库(1)(1).bmp"
-dest_files=["res://.godot/imported/线索库(1)(1).bmp-1e5e71b2f8ef1d153171485590ef1f02.ctex"]
+source_file="res://软设人物/软设人物/8侦探.png"
+dest_files=["res://.godot/imported/8侦探.png-29ebd9d66b1bd612fe691fad4b855544.ctex"]
 
 [params]
 

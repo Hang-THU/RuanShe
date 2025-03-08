@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=3 uid="uid://dfbw14no5cb26"]
+[gd_scene load_steps=42 format=3 uid="uid://dfbw14no5cb26"]
 
 [ext_resource type="Texture2D" uid="uid://3om8ip5hgpye" path="res://人物关系图、线索库、地图背景（1）(1).png" id="1_xcmfn"]
 [ext_resource type="Texture2D" uid="uid://bgsx1ujk3odwj" path="res://软设人物2/1富商(1).png" id="2_t1gwx"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://cdxsckvsupp7u" path="res://人物姓名/金世昌(2).png" id="12_k7w0y"]
 [ext_resource type="Texture2D" uid="uid://cy2rvhnyejn31" path="res://各种按钮/关闭(1)(2)(1).png" id="13_tc2t2"]
 [ext_resource type="Texture2D" uid="uid://ddx56vsqghr2t" path="res://各种按钮/关闭(1)(2)(1)(1).png" id="13_wk0jf"]
+[ext_resource type="Script" path="res://PB1Test.cs" id="14_l3j4f"]
 [ext_resource type="Texture2D" uid="uid://uviuxhpndg0" path="res://人物姓名/刘倩倩(1)(1).png" id="15_am55k"]
 [ext_resource type="Script" path="res://CloseButtonTest.cs" id="16_f1p0m"]
 [ext_resource type="Texture2D" uid="uid://ca7esbavlu626" path="res://人物姓名/刘倩倩(1)(2).png" id="16_pkoow"]
@@ -28,6 +29,18 @@
 [ext_resource type="Texture2D" uid="uid://br7eqkfjspsvw" path="res://人物姓名/周明远（1）(2).png" id="24_hwb5a"]
 [ext_resource type="Texture2D" uid="uid://bwqyblbjgpeac" path="res://人物姓名/黄婉容(1)(1).png" id="25_c710a"]
 [ext_resource type="Texture2D" uid="uid://bbtn5v1pc777n" path="res://人物姓名/黄婉容(1)(2).png" id="26_th5i5"]
+[ext_resource type="Texture2D" uid="uid://c6nt6xoe6ptq" path="res://人物档案背景.png" id="29_oxlod"]
+[ext_resource type="Script" path="res://FileBackgroundScript.cs" id="30_b1tf3"]
+[ext_resource type="Script" path="res://CloseButton2Test.cs" id="32_leuxo"]
+[ext_resource type="Texture2D" uid="uid://xb2ogl43smbf" path="res://软设人物/软设人物/1富商.png" id="33_81dmw"]
+[ext_resource type="Texture2D" uid="uid://cmoxuiy1ee3kt" path="res://软设人物/软设人物/2妻子.png" id="34_qvdlw"]
+[ext_resource type="Texture2D" uid="uid://dk0ilch1fq0gv" path="res://软设人物/软设人物/3合伙人.png" id="35_b2o5j"]
+[ext_resource type="Texture2D" uid="uid://bhqg537blfs4l" path="res://软设人物/软设人物/4女儿金伊一.png" id="36_jsjbd"]
+[ext_resource type="Texture2D" uid="uid://dwqafeejgtue" path="res://软设人物/软设人物/5女儿男友.png" id="37_v1bn6"]
+[ext_resource type="Texture2D" uid="uid://cxwcm8ynh8qy" path="res://软设人物/软设人物/6管家_.png" id="38_krcqv"]
+[ext_resource type="Texture2D" uid="uid://dxeso6pprsx1l" path="res://软设人物/软设人物/7女佣.png" id="39_kqi4y"]
+[ext_resource type="Texture2D" uid="uid://tvheb16gd2tb" path="res://软设人物/软设人物/9宋延好友.png" id="40_f6bn8"]
+[ext_resource type="Texture2D" uid="uid://cmjr1ak1gobcl" path="res://软设人物/软设人物/8侦探.png" id="41_7ohsx"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -36,128 +49,6 @@ position = Vector2(900, 675)
 scale = Vector2(0.521, 0.521)
 texture = ExtResource("1_xcmfn")
 metadata/_edit_lock_ = true
-
-[node name="1富商(1)" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(851.034, 617.973)
-rotation = 0.0783431
-scale = Vector2(0.328203, 0.328203)
-texture = ExtResource("2_t1gwx")
-
-[node name="2妻子（1）" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(608.8, 308.2)
-rotation = -0.0827154
-scale = Vector2(0.158594, 0.158594)
-texture = ExtResource("3_b1l7v")
-
-[node name="4女儿金伊一(1)" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(391.5, 570.5)
-rotation = -0.135043
-scale = Vector2(0.231865, 0.231865)
-texture = ExtResource("4_2uqnq")
-
-[node name="5女儿男友(1)" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(403, 884)
-rotation = 0.135669
-scale = Vector2(0.284414, 0.284414)
-texture = ExtResource("7_wvpwi")
-
-[node name="6管家(1)" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(1204.19, 568.327)
-rotation = -0.0770558
-scale = Vector2(0.167724, 0.167724)
-texture = ExtResource("8_ghv6f")
-
-[node name="7女佣(1)" type="Sprite2D" parent="."]
-z_index = 1
-position = Vector2(990.675, 932.308)
-rotation = 0.10524
-scale = Vector2(0.292307, 0.292307)
-texture = ExtResource("9_jpb4l")
-
-[node name="人物底框" type="Sprite2D" parent="."]
-position = Vector2(852.107, 607.402)
-rotation = 0.0785398
-scale = Vector2(0.28222, 0.422771)
-texture = ExtResource("10_sfj8u")
-
-[node name="人物底框2" type="Sprite2D" parent="."]
-position = Vector2(608, 299)
-rotation = -0.0827154
-scale = Vector2(0.287598, 0.367676)
-texture = ExtResource("10_sfj8u")
-
-[node name="人物底框3" type="Sprite2D" parent="."]
-position = Vector2(974.196, 302.348)
-rotation = 0.109176
-scale = Vector2(0.276452, 0.378143)
-texture = ExtResource("10_sfj8u")
-
-[node name="3合伙人(1)" type="Sprite2D" parent="."]
-position = Vector2(979, 310)
-rotation = 0.111937
-scale = Vector2(0.146851, 0.146851)
-texture = ExtResource("6_rtiml")
-
-[node name="人物底框4" type="Sprite2D" parent="."]
-position = Vector2(987, 924)
-rotation = 0.109176
-scale = Vector2(0.259691, 0.389712)
-texture = ExtResource("10_sfj8u")
-
-[node name="人物底框5" type="Sprite2D" parent="."]
-position = Vector2(1204, 561.351)
-rotation = -0.0686818
-scale = Vector2(0.261768, 0.378143)
-texture = ExtResource("10_sfj8u")
-
-[node name="人物底框6" type="Sprite2D" parent="."]
-position = Vector2(670, 1020)
-rotation = 0.013406
-scale = Vector2(0.259691, 0.389712)
-texture = ExtResource("10_sfj8u")
-
-[node name="人物底框7" type="Sprite2D" parent="."]
-position = Vector2(402.599, 876.189)
-rotation = 0.109176
-scale = Vector2(0.28368, 0.410564)
-texture = ExtResource("10_sfj8u")
-
-[node name="人物底框8" type="Sprite2D" parent="."]
-position = Vector2(398, 567)
-rotation = -0.111471
-scale = Vector2(0.259691, 0.389712)
-texture = ExtResource("10_sfj8u")
-
-[node name="神秘人(1)" type="Sprite2D" parent="."]
-position = Vector2(670, 1027)
-scale = Vector2(0.182617, 0.182617)
-texture = ExtResource("10_7dqta")
-script = ExtResource("11_0hptn")
-
-[node name="人物底框9" type="Sprite2D" parent="."]
-position = Vector2(1315.62, 858.297)
-rotation = -0.118972
-scale = Vector2(0.259691, 0.389712)
-texture = ExtResource("10_sfj8u")
-
-[node name="神秘人(1)2" type="Sprite2D" parent="."]
-position = Vector2(1315.62, 865.297)
-rotation = -0.132378
-scale = Vector2(0.182617, 0.182617)
-texture = ExtResource("10_7dqta")
-
-[node name="PB" type="TextureButton" parent="."]
-offset_left = 779.0
-offset_top = 722.0
-offset_right = 912.0
-offset_bottom = 777.0
-texture_normal = ExtResource("11_ya3jf")
-texture_hover = ExtResource("12_k7w0y")
 
 [node name="CloseButton" type="TextureButton" parent="."]
 offset_left = 1540.0
@@ -169,7 +60,156 @@ texture_normal = ExtResource("13_wk0jf")
 texture_hover = ExtResource("13_tc2t2")
 script = ExtResource("16_f1p0m")
 
-[node name="PB2" type="TextureButton" parent="."]
+[node name="FileBackground" type="Sprite2D" parent="."]
+visible = false
+z_index = 2
+position = Vector2(919, 680)
+scale = Vector2(1.1276, 1.09766)
+texture = ExtResource("29_oxlod")
+script = ExtResource("30_b1tf3")
+
+[node name="CloseButton2" type="TextureButton" parent="."]
+visible = false
+z_index = 2
+offset_left = 1265.0
+offset_top = 127.0
+offset_right = 1374.0
+offset_bottom = 236.0
+scale = Vector2(0.635, 0.762)
+texture_normal = ExtResource("13_wk0jf")
+texture_hover = ExtResource("13_tc2t2")
+script = ExtResource("32_leuxo")
+
+[node name="NodeOntheBoard" type="Node2D" parent="."]
+
+[node name="1富商(1)" type="Sprite2D" parent="NodeOntheBoard"]
+z_index = 1
+position = Vector2(851.034, 617.973)
+rotation = 0.0783431
+scale = Vector2(0.328203, 0.328203)
+texture = ExtResource("2_t1gwx")
+
+[node name="2妻子（1）" type="Sprite2D" parent="NodeOntheBoard"]
+z_index = 1
+position = Vector2(608.8, 308.2)
+rotation = -0.0827154
+scale = Vector2(0.158594, 0.158594)
+texture = ExtResource("3_b1l7v")
+
+[node name="4女儿金伊一(1)" type="Sprite2D" parent="NodeOntheBoard"]
+z_index = 1
+position = Vector2(391.5, 570.5)
+rotation = -0.135043
+scale = Vector2(0.231865, 0.231865)
+texture = ExtResource("4_2uqnq")
+
+[node name="5女儿男友(1)" type="Sprite2D" parent="NodeOntheBoard"]
+z_index = 1
+position = Vector2(403, 884)
+rotation = 0.135669
+scale = Vector2(0.284414, 0.284414)
+texture = ExtResource("7_wvpwi")
+
+[node name="6管家(1)" type="Sprite2D" parent="NodeOntheBoard"]
+z_index = 1
+position = Vector2(1204.19, 568.327)
+rotation = -0.0770558
+scale = Vector2(0.167724, 0.167724)
+texture = ExtResource("8_ghv6f")
+
+[node name="7女佣(1)" type="Sprite2D" parent="NodeOntheBoard"]
+z_index = 1
+position = Vector2(990.675, 932.308)
+rotation = 0.10524
+scale = Vector2(0.292307, 0.292307)
+texture = ExtResource("9_jpb4l")
+
+[node name="人物底框" type="Sprite2D" parent="NodeOntheBoard"]
+position = Vector2(852.107, 607.402)
+rotation = 0.0785398
+scale = Vector2(0.28222, 0.422771)
+texture = ExtResource("10_sfj8u")
+
+[node name="人物底框2" type="Sprite2D" parent="NodeOntheBoard"]
+position = Vector2(608, 299)
+rotation = -0.0827154
+scale = Vector2(0.287598, 0.367676)
+texture = ExtResource("10_sfj8u")
+
+[node name="人物底框3" type="Sprite2D" parent="NodeOntheBoard"]
+position = Vector2(974.196, 302.348)
+rotation = 0.109176
+scale = Vector2(0.276452, 0.378143)
+texture = ExtResource("10_sfj8u")
+
+[node name="3合伙人(1)" type="Sprite2D" parent="NodeOntheBoard"]
+position = Vector2(979, 310)
+rotation = 0.111937
+scale = Vector2(0.146851, 0.146851)
+texture = ExtResource("6_rtiml")
+
+[node name="人物底框4" type="Sprite2D" parent="NodeOntheBoard"]
+position = Vector2(987, 924)
+rotation = 0.109176
+scale = Vector2(0.259691, 0.389712)
+texture = ExtResource("10_sfj8u")
+
+[node name="人物底框5" type="Sprite2D" parent="NodeOntheBoard"]
+position = Vector2(1204, 561.351)
+rotation = -0.0686818
+scale = Vector2(0.261768, 0.378143)
+texture = ExtResource("10_sfj8u")
+
+[node name="人物底框6" type="Sprite2D" parent="NodeOntheBoard"]
+position = Vector2(670, 1020)
+rotation = 0.013406
+scale = Vector2(0.259691, 0.389712)
+texture = ExtResource("10_sfj8u")
+
+[node name="人物底框7" type="Sprite2D" parent="NodeOntheBoard"]
+position = Vector2(402.599, 876.189)
+rotation = 0.109176
+scale = Vector2(0.28368, 0.410564)
+texture = ExtResource("10_sfj8u")
+
+[node name="人物底框8" type="Sprite2D" parent="NodeOntheBoard"]
+position = Vector2(398, 567)
+rotation = -0.111471
+scale = Vector2(0.259691, 0.389712)
+texture = ExtResource("10_sfj8u")
+
+[node name="神秘人(1)" type="Sprite2D" parent="NodeOntheBoard"]
+position = Vector2(670, 1027)
+scale = Vector2(0.182617, 0.182617)
+texture = ExtResource("10_7dqta")
+script = ExtResource("11_0hptn")
+
+[node name="人物底框9" type="Sprite2D" parent="NodeOntheBoard"]
+position = Vector2(1315.62, 858.297)
+rotation = -0.118972
+scale = Vector2(0.259691, 0.389712)
+texture = ExtResource("10_sfj8u")
+
+[node name="神秘人(1)2" type="Sprite2D" parent="NodeOntheBoard"]
+position = Vector2(1315.62, 865.297)
+rotation = -0.132378
+scale = Vector2(0.182617, 0.182617)
+texture = ExtResource("10_7dqta")
+
+[node name="PButton" type="TextureButton" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PB" type="TextureButton" parent="PButton"]
+offset_left = 779.0
+offset_top = 722.0
+offset_right = 912.0
+offset_bottom = 777.0
+texture_normal = ExtResource("11_ya3jf")
+texture_hover = ExtResource("12_k7w0y")
+script = ExtResource("14_l3j4f")
+
+[node name="PB2" type="TextureButton" parent="PButton"]
 offset_left = 909.0
 offset_top = 1028.0
 offset_right = 1026.0
@@ -178,7 +218,7 @@ scale = Vector2(1.115, 1.115)
 texture_normal = ExtResource("15_am55k")
 texture_hover = ExtResource("16_pkoow")
 
-[node name="PB3" type="TextureButton" parent="."]
+[node name="PB3" type="TextureButton" parent="PButton"]
 offset_left = 336.0
 offset_top = 991.0
 offset_right = 416.0
@@ -187,7 +227,7 @@ scale = Vector2(1.16, 1.16)
 texture_normal = ExtResource("17_aipv5")
 texture_hover = ExtResource("18_4xfvm")
 
-[node name="PB4" type="TextureButton" parent="."]
+[node name="PB4" type="TextureButton" parent="PButton"]
 offset_left = 347.0
 offset_top = 671.0
 offset_right = 466.0
@@ -196,7 +236,7 @@ scale = Vector2(1.105, 1.105)
 texture_normal = ExtResource("19_jr3tw")
 texture_hover = ExtResource("20_pxym3")
 
-[node name="PB5" type="TextureButton" parent="."]
+[node name="PB5" type="TextureButton" parent="PButton"]
 offset_left = 1171.0
 offset_top = 663.0
 offset_right = 1251.0
@@ -205,7 +245,7 @@ scale = Vector2(1.165, 1.165)
 texture_normal = ExtResource("21_3qbcb")
 texture_hover = ExtResource("22_kyrfd")
 
-[node name="PB6" type="TextureButton" parent="."]
+[node name="PB6" type="TextureButton" parent="PButton"]
 offset_left = 905.0
 offset_top = 400.0
 offset_right = 1022.0
@@ -214,7 +254,7 @@ scale = Vector2(1.095, 1.095)
 texture_normal = ExtResource("23_udflk")
 texture_hover = ExtResource("24_hwb5a")
 
-[node name="PB7" type="TextureButton" parent="."]
+[node name="PB7" type="TextureButton" parent="PButton"]
 offset_left = 558.0
 offset_top = 394.0
 offset_right = 678.0
@@ -223,4 +263,69 @@ scale = Vector2(1.075, 1.075)
 texture_normal = ExtResource("25_c710a")
 texture_hover = ExtResource("26_th5i5")
 
+[node name="1富商" type="Sprite2D" parent="."]
+visible = false
+z_index = 2
+position = Vector2(715, 331)
+scale = Vector2(0.26913, 0.26913)
+texture = ExtResource("33_81dmw")
+
+[node name="2妻子" type="Sprite2D" parent="."]
+visible = false
+z_index = 2
+position = Vector2(715, 331)
+scale = Vector2(0.146, 0.146)
+texture = ExtResource("34_qvdlw")
+
+[node name="3合伙人" type="Sprite2D" parent="."]
+visible = false
+z_index = 2
+position = Vector2(715, 331)
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("35_b2o5j")
+
+[node name="4女儿金伊一" type="Sprite2D" parent="."]
+visible = false
+z_index = 2
+position = Vector2(715, 331)
+scale = Vector2(0.194, 0.194)
+texture = ExtResource("36_jsjbd")
+
+[node name="5女儿男友" type="Sprite2D" parent="."]
+visible = false
+z_index = 2
+position = Vector2(715, 331)
+scale = Vector2(0.241, 0.241)
+texture = ExtResource("37_v1bn6")
+
+[node name="6管家" type="Sprite2D" parent="."]
+visible = false
+z_index = 2
+position = Vector2(715, 331)
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("38_krcqv")
+
+[node name="7女佣" type="Sprite2D" parent="."]
+visible = false
+z_index = 2
+position = Vector2(715, 331)
+scale = Vector2(0.242, 0.242)
+texture = ExtResource("39_kqi4y")
+
+[node name="9宋延好友" type="Sprite2D" parent="."]
+visible = false
+z_index = 2
+position = Vector2(715, 331)
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("40_f6bn8")
+
+[node name="8侦探" type="Sprite2D" parent="."]
+visible = false
+z_index = 2
+position = Vector2(715, 331)
+scale = Vector2(0.14, 0.14)
+texture = ExtResource("41_7ohsx")
+
 [connection signal="pressed" from="CloseButton" to="CloseButton" method="SetVisibleType"]
+[connection signal="pressed" from="CloseButton2" to="CloseButton2" method="CloseFile"]
+[connection signal="pressed" from="PButton/PB" to="PButton/PB" method="GetCharacterFile"]
