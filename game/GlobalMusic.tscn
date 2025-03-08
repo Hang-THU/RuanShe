@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://de13ctx4kk2rb"]
+
+[ext_resource type="AudioStream" uid="uid://cs243b4w1json" path="res://thunderstorm1.wav" id="1_vrajh"]
+[ext_resource type="Script" path="res://GlobalMusicTest.cs" id="2_0c441"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_vrajh")
+autoplay = true
+script = ExtResource("2_0c441")

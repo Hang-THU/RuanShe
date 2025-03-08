@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://cgng4nyii0i8m"]
+
+[ext_resource type="Script" path="res://LabelTest.cs" id="1_b6wr0"]
+[ext_resource type="FontFile" uid="uid://bue2k04uqrith" path="res://华文行楷_0.ttf" id="1_dyihk"]
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_5ey25"]
+file = "res://StartVideo.ogv"
+
+[node name="Node2D" type="Node2D"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_right = 960.0
+offset_bottom = 720.0
+scale = Vector2(1.875, 1.875)
+stream = SubResource("VideoStreamTheora_5ey25")
+autoplay = true
+loop = true
+
+[node name="Label(1)" type="Label" parent="."]
+z_index = 1
+offset_left = 1352.0
+offset_top = 1273.0
+offset_right = 1785.0
+offset_bottom = 1342.0
+theme_override_fonts/font = ExtResource("1_dyihk")
+theme_override_font_sizes/font_size = 50
+text = "按任意键开始游戏..."
+script = ExtResource("1_b6wr0")
