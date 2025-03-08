@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class MapButton : TextureButton
+public partial class CharacterRelationship : TextureButton
 {
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -15,6 +15,6 @@ public partial class MapButton : TextureButton
 	public void ChangeScene()
 	{
 		SceneTree st = this.GetTree();
-		st.ChangeSceneToFile("res://Map.tscn");
+		st.ChangeSceneToFile("res://CharacterRelationshipWindow.tscn");
 	}
 }
