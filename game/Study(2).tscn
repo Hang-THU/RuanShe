@@ -1,15 +1,17 @@
-[gd_scene load_steps=11 format=3 uid="uid://dqp3f8owiylwn"]
+[gd_scene load_steps=13 format=3 uid="uid://dqp3f8owiylwn"]
 
 [ext_resource type="Texture2D" uid="uid://noyxvoxiphf4" path="res://书房场景2.png" id="1_b8yui"]
 [ext_resource type="Texture2D" uid="uid://bgirhqwlp7owt" path="res://各种按钮/人物关系图按钮(3).bmp" id="2_cvkem"]
 [ext_resource type="Texture2D" uid="uid://b548qmeyvhp3l" path="res://各种按钮/人物关系图按钮.bmp" id="3_jo8bp"]
-[ext_resource type="Script" path="res://CharacterRelationshipButton2.cs" id="4_cgexc"]
 [ext_resource type="Texture2D" uid="uid://u7q0115w5mds" path="res://各种按钮/线索库(1)(2).bmp" id="5_m8ekh"]
 [ext_resource type="Texture2D" uid="uid://1qy86odbjse5" path="res://各种按钮/线索库(1)(1).bmp" id="6_5k1e8"]
-[ext_resource type="Script" path="res://ClueLibraryButton3.cs" id="7_d7d5k"]
 [ext_resource type="Texture2D" uid="uid://cd8vkogaqosf" path="res://各种按钮/地图(1)(2).bmp" id="8_ptc38"]
+[ext_resource type="Script" path="res://CharacterRelationshipButton.cs" id="9_omesf"]
 [ext_resource type="Texture2D" uid="uid://cggmwoq3tq18d" path="res://各种按钮/地图(1)(1).bmp" id="9_vvenc"]
 [ext_resource type="Script" path="res://MapButton.cs" id="10_dcydb"]
+[ext_resource type="Texture2D" uid="uid://c7j65giucfu22" path="res://返回切页按钮(1).png" id="11_atk2q"]
+[ext_resource type="Script" path="res://LastPageinStudy2.cs" id="12_nv1e8"]
+[ext_resource type="Script" path="res://ClueLibraryButton.cs" id="12_t27iu"]
 
 [node name="Study(2)" type="Control"]
 layout_mode = 3
@@ -24,29 +26,6 @@ position = Vector2(900, 675)
 scale = Vector2(1.563, 1.563)
 texture = ExtResource("1_b8yui")
 
-[node name="Character_Relationship" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 1379.0
-offset_top = 1214.0
-offset_right = 1793.0
-offset_bottom = 1628.0
-scale = Vector2(0.3, 0.3)
-action_mode = 0
-texture_normal = ExtResource("2_cvkem")
-texture_hover = ExtResource("3_jo8bp")
-script = ExtResource("4_cgexc")
-
-[node name="ClueLibraryButton3" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 1516.0
-offset_top = 1214.0
-offset_right = 1930.0
-offset_bottom = 1629.0
-scale = Vector2(0.3, 0.3)
-texture_normal = ExtResource("5_m8ekh")
-texture_hover = ExtResource("6_5k1e8")
-script = ExtResource("7_d7d5k")
-
 [node name="MapButton3" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 1656.0
@@ -58,6 +37,39 @@ texture_normal = ExtResource("8_ptc38")
 texture_hover = ExtResource("9_vvenc")
 script = ExtResource("10_dcydb")
 
-[connection signal="pressed" from="Character_Relationship" to="Character_Relationship" method="ChangeScene"]
-[connection signal="pressed" from="ClueLibraryButton3" to="ClueLibraryButton3" method="ChangeScene"]
+[node name="LastPageinStudy2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = -33.0
+offset_top = 518.0
+offset_right = 479.0
+offset_bottom = 1030.0
+scale = Vector2(0.47, 0.47)
+texture_normal = ExtResource("11_atk2q")
+script = ExtResource("12_nv1e8")
+
+[node name="Character_Relationship" type="TextureButton" parent="."]
+offset_left = 1379.0
+offset_top = 1214.0
+offset_right = 1793.0
+offset_bottom = 1628.0
+scale = Vector2(0.3, 0.3)
+tooltip_text = "人物关系图"
+texture_normal = ExtResource("2_cvkem")
+texture_hover = ExtResource("3_jo8bp")
+script = ExtResource("9_omesf")
+
+[node name="Clue_Library" type="TextureButton" parent="."]
+offset_left = 1516.0
+offset_top = 1214.0
+offset_right = 1930.0
+offset_bottom = 1629.0
+scale = Vector2(0.3, 0.3)
+tooltip_text = "线索库"
+texture_normal = ExtResource("5_m8ekh")
+texture_hover = ExtResource("6_5k1e8")
+script = ExtResource("12_t27iu")
+
 [connection signal="pressed" from="MapButton3" to="MapButton3" method="ChangeScene"]
+[connection signal="pressed" from="LastPageinStudy2" to="LastPageinStudy2" method="ChangeScene"]
+[connection signal="pressed" from="Character_Relationship" to="Character_Relationship" method="ChangeScene"]
+[connection signal="pressed" from="Clue_Library" to="Clue_Library" method="ChangeScene"]

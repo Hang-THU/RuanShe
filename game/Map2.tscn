@@ -1,13 +1,15 @@
-[gd_scene load_steps=12 format=3 uid="uid://dde6qjgwfx4xa"]
+[gd_scene load_steps=14 format=3 uid="uid://dde6qjgwfx4xa"]
 
 [ext_resource type="Texture2D" uid="uid://bbqv5t1xja4ga" path="res://结构图.jpg" id="1_6ix1h"]
 [ext_resource type="Texture2D" uid="uid://by6ih0lakki31" path="res://湖.png" id="2_psjno"]
 [ext_resource type="Texture2D" uid="uid://da8gmh7y2nl4j" path="res://杂物间.png" id="3_okk6y"]
 [ext_resource type="Texture2D" uid="uid://doeru6lr3w2kw" path="res://杂物间2.png" id="4_431q5"]
+[ext_resource type="Script" path="res://GuidetoUtility1.cs" id="5_a0dyf"]
 [ext_resource type="Texture2D" uid="uid://b556rixmpxmxq" path="res://金伊一的卧室.png" id="5_pxhtt"]
 [ext_resource type="Texture2D" uid="uid://c3avhow2y01gp" path="res://主卧.png" id="6_i8ot2"]
 [ext_resource type="Texture2D" uid="uid://cgbg7v3eeyd3m" path="res://主卧2.png" id="7_w2gu5"]
 [ext_resource type="Texture2D" uid="uid://wtjwee8d8f5i" path="res://客房.png" id="8_n3nis"]
+[ext_resource type="Script" path="res://GuidetoMasterBedroom.cs" id="8_y8q0o"]
 [ext_resource type="Texture2D" uid="uid://yad08ctd7pl5" path="res://别墅二层结构图.png" id="9_t20av"]
 [ext_resource type="Texture2D" uid="uid://bvsg5rynittje" path="res://返回切页按钮.png" id="10_75lpl"]
 [ext_resource type="Script" path="res://LastPage.cs" id="11_scypo"]
@@ -37,6 +39,7 @@ offset_bottom = 412.779
 scale = Vector2(1.82, 1.82)
 texture_normal = ExtResource("3_okk6y")
 texture_hover = ExtResource("4_431q5")
+script = ExtResource("5_a0dyf")
 
 [node name="金伊一的卧室" type="TextureButton" parent="结构图"]
 offset_left = -595.588
@@ -54,6 +57,7 @@ offset_bottom = -509.176
 scale = Vector2(1.83, 1.83)
 texture_normal = ExtResource("6_i8ot2")
 texture_hover = ExtResource("7_w2gu5")
+script = ExtResource("8_y8q0o")
 
 [node name="客房" type="TextureButton" parent="结构图"]
 offset_left = 854.779
@@ -80,4 +84,6 @@ scale = Vector2(0.47, 0.47)
 texture_normal = ExtResource("10_75lpl")
 script = ExtResource("11_scypo")
 
+[connection signal="pressed" from="结构图/杂物间" to="结构图/杂物间" method="ChangeScene"]
+[connection signal="pressed" from="结构图/主卧" to="结构图/主卧" method="ChangeScene"]
 [connection signal="pressed" from="结构图/返回切页按钮" to="结构图/返回切页按钮" method="ChangeScene"]
