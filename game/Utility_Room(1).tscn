@@ -9,7 +9,7 @@
 [ext_resource type="Script" path="res://ClueLibraryButton3.cs" id="7_exnuw"]
 [ext_resource type="Texture2D" uid="uid://cd8vkogaqosf" path="res://各种按钮/地图(1)(2).bmp" id="8_16rfa"]
 [ext_resource type="Texture2D" uid="uid://cggmwoq3tq18d" path="res://各种按钮/地图(1)(1).bmp" id="9_qxq1y"]
-[ext_resource type="Script" path="res://MapButton3.cs" id="10_fp2gf"]
+[ext_resource type="Script" path="res://MapButton.cs" id="10_ovove"]
 
 [node name="Utility_Room(1)" type="Control"]
 layout_mode = 3
@@ -55,7 +55,7 @@ offset_bottom = 1606.0
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("8_16rfa")
 texture_hover = ExtResource("9_qxq1y")
-script = ExtResource("10_fp2gf")
+script = ExtResource("10_ovove")
 
 [connection signal="pressed" from="CharacterRelationshipButton3" to="CharacterRelationshipButton3" method="ChangeScene"]
 [connection signal="pressed" from="ClueLibraryButton3" to="ClueLibraryButton3" method="ChangeScene"]

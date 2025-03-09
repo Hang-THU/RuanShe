@@ -25,6 +25,7 @@ scale = Vector2(1.563, 1.563)
 texture = ExtResource("1_r55oo")
 
 [node name="Character_Relationship" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 1379.0
 offset_top = 1214.0
 offset_right = 1793.0
@@ -36,6 +37,7 @@ texture_hover = ExtResource("3_rpopl")
 script = ExtResource("4_u1pdk")
 
 [node name="Clue_Library" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 1516.0
 offset_top = 1214.0
 offset_right = 1930.0
@@ -47,6 +49,7 @@ texture_hover = ExtResource("6_tlwvi")
 script = ExtResource("7_uom1h")
 
 [node name="Map" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 1656.0
 offset_top = 1214.0
 offset_right = 2048.0

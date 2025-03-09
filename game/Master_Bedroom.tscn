@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://cd8vkogaqosf" path="res://各种按钮/地图(1)(2).bmp" id="6_w6xt2"]
 [ext_resource type="Texture2D" uid="uid://cggmwoq3tq18d" path="res://各种按钮/地图(1)(1).bmp" id="7_4xn5b"]
 [ext_resource type="Script" path="res://ClueLibrary.cs" id="7_cyi7k"]
-[ext_resource type="Script" path="res://MapButton2.cs" id="10_gsd7p"]
+[ext_resource type="Script" path="res://MapButton.cs" id="10_3al8c"]
 
 [node name="Master_Bedroom" type="Control"]
 layout_mode = 3
@@ -56,7 +56,7 @@ offset_bottom = 1606.0
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("6_w6xt2")
 texture_hover = ExtResource("7_4xn5b")
-script = ExtResource("10_gsd7p")
+script = ExtResource("10_3al8c")
 
 [connection signal="pressed" from="Character_Relationship" to="Character_Relationship" method="ChangeScene"]
 [connection signal="pressed" from="Clue_Library" to="Clue_Library" method="ChangeScene"]
