@@ -1,0 +1,88 @@
+[gd_scene load_steps=15 format=3 uid="uid://dsfew3tuhfb44"]
+
+[ext_resource type="Texture2D" uid="uid://beebfnnjjlw6s" path="res://书房场景3.png" id="1_df4d8"]
+[ext_resource type="Texture2D" uid="uid://cd8vkogaqosf" path="res://各种按钮/地图(1)(2).bmp" id="2_svywi"]
+[ext_resource type="Texture2D" uid="uid://cggmwoq3tq18d" path="res://各种按钮/地图(1)(1).bmp" id="3_nwx21"]
+[ext_resource type="Script" path="res://MapButton.cs" id="4_1hygy"]
+[ext_resource type="Texture2D" uid="uid://u7q0115w5mds" path="res://各种按钮/线索库(1)(2).bmp" id="5_kdcs0"]
+[ext_resource type="Texture2D" uid="uid://1qy86odbjse5" path="res://各种按钮/线索库(1)(1).bmp" id="6_35km3"]
+[ext_resource type="Script" path="res://ClueLibraryButton.cs" id="7_0u6sg"]
+[ext_resource type="Texture2D" uid="uid://bgirhqwlp7owt" path="res://各种按钮/人物关系图按钮(3).bmp" id="8_l2v2q"]
+[ext_resource type="Texture2D" uid="uid://b548qmeyvhp3l" path="res://各种按钮/人物关系图按钮.bmp" id="9_2bfm8"]
+[ext_resource type="Script" path="res://CharacterRelationshipButton.cs" id="10_4yuj4"]
+[ext_resource type="Texture2D" uid="uid://btec8vpqwe5r4" path="res://切页按钮.png" id="11_k3vry"]
+[ext_resource type="Script" path="res://NextPageinStudy3.cs" id="12_erneo"]
+[ext_resource type="Texture2D" uid="uid://bvsg5rynittje" path="res://返回切页按钮.png" id="13_ndygl"]
+[ext_resource type="Script" path="res://LastPageinStudy3.cs" id="14_g2ivb"]
+
+[node name="Study(3)" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(900, 675)
+scale = Vector2(1.563, 1.563)
+texture = ExtResource("1_df4d8")
+
+[node name="Map" type="TextureButton" parent="."]
+offset_left = 1656.0
+offset_top = 1214.0
+offset_right = 2048.0
+offset_bottom = 1606.0
+scale = Vector2(0.317, 0.317)
+tooltip_text = "地图"
+texture_normal = ExtResource("2_svywi")
+texture_hover = ExtResource("3_nwx21")
+script = ExtResource("4_1hygy")
+
+[node name="Clue_Library" type="TextureButton" parent="."]
+offset_left = 1516.0
+offset_top = 1214.0
+offset_right = 1930.0
+offset_bottom = 1629.0
+scale = Vector2(0.3, 0.3)
+tooltip_text = "线索库"
+texture_normal = ExtResource("5_kdcs0")
+texture_hover = ExtResource("6_35km3")
+script = ExtResource("7_0u6sg")
+
+[node name="Character_Relationship" type="TextureButton" parent="."]
+offset_left = 1379.0
+offset_top = 1214.0
+offset_right = 1793.0
+offset_bottom = 1628.0
+scale = Vector2(0.3, 0.3)
+tooltip_text = "人物关系图"
+texture_normal = ExtResource("8_l2v2q")
+texture_hover = ExtResource("9_2bfm8")
+script = ExtResource("10_4yuj4")
+
+[node name="NextPageinStudy3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1603.0
+offset_top = 551.0
+offset_right = 2115.0
+offset_bottom = 1063.0
+scale = Vector2(0.47, 0.47)
+texture_normal = ExtResource("11_k3vry")
+script = ExtResource("12_erneo")
+
+[node name="LastPageinStudy3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = -32.0
+offset_top = 546.0
+offset_right = 480.0
+offset_bottom = 1058.0
+scale = Vector2(0.47, 0.47)
+texture_normal = ExtResource("13_ndygl")
+script = ExtResource("14_g2ivb")
+
+[connection signal="pressed" from="Map" to="Map" method="ChangeScene"]
+[connection signal="pressed" from="Clue_Library" to="Clue_Library" method="ChangeScene"]
+[connection signal="pressed" from="Character_Relationship" to="Character_Relationship" method="ChangeScene"]
+[connection signal="pressed" from="NextPageinStudy3" to="NextPageinStudy3" method="ChangeScene"]
+[connection signal="pressed" from="LastPageinStudy3" to="LastPageinStudy3" method="ChangeScene"]
