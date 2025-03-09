@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://bjypj6qclj3c3"]
+[gd_scene load_steps=13 format=3 uid="uid://bjypj6qclj3c3"]
 
 [ext_resource type="Texture2D" uid="uid://crlhxg2pyi566" path="res://杂物间场景2.png" id="1_r55oo"]
 [ext_resource type="Texture2D" uid="uid://bgirhqwlp7owt" path="res://各种按钮/人物关系图按钮(3).bmp" id="2_kp4ui"]
@@ -10,6 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://cd8vkogaqosf" path="res://各种按钮/地图(1)(2).bmp" id="8_nvd6d"]
 [ext_resource type="Texture2D" uid="uid://cggmwoq3tq18d" path="res://各种按钮/地图(1)(1).bmp" id="9_bjvw3"]
 [ext_resource type="Script" path="res://MapButton.cs" id="10_4d8u8"]
+[ext_resource type="Texture2D" uid="uid://c7j65giucfu22" path="res://返回切页按钮(1).png" id="11_xm7om"]
+[ext_resource type="Script" path="res://LastPageinUtility2.cs" id="12_irs0f"]
 
 [node name="Utility_Room(2)" type="Control"]
 layout_mode = 3
@@ -60,6 +62,17 @@ texture_normal = ExtResource("8_nvd6d")
 texture_hover = ExtResource("9_bjvw3")
 script = ExtResource("10_4d8u8")
 
+[node name="LastPageinUtility2" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = -20.0
+offset_top = 523.0
+offset_right = 492.0
+offset_bottom = 1035.0
+scale = Vector2(0.47, 0.47)
+texture_normal = ExtResource("11_xm7om")
+script = ExtResource("12_irs0f")
+
 [connection signal="pressed" from="Character_Relationship" to="Character_Relationship" method="ChangeScene"]
 [connection signal="pressed" from="Clue_Library" to="Clue_Library" method="ChangeScene"]
 [connection signal="pressed" from="Map" to="Map" method="ChangeScene"]
+[connection signal="pressed" from="LastPageinUtility2" to="LastPageinUtility2" method="ChangeScene"]
