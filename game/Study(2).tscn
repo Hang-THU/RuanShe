@@ -9,7 +9,7 @@
 [ext_resource type="Script" path="res://ClueLibraryButton3.cs" id="7_d7d5k"]
 [ext_resource type="Texture2D" uid="uid://cd8vkogaqosf" path="res://各种按钮/地图(1)(2).bmp" id="8_ptc38"]
 [ext_resource type="Texture2D" uid="uid://cggmwoq3tq18d" path="res://各种按钮/地图(1)(1).bmp" id="9_vvenc"]
-[ext_resource type="Script" path="res://MapButton3.cs" id="10_p28h5"]
+[ext_resource type="Script" path="res://MapButton.cs" id="10_dcydb"]
 
 [node name="Study(2)" type="Control"]
 layout_mode = 3
@@ -25,6 +25,7 @@ scale = Vector2(1.563, 1.563)
 texture = ExtResource("1_b8yui")
 
 [node name="Character_Relationship" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 1379.0
 offset_top = 1214.0
 offset_right = 1793.0
@@ -36,6 +37,7 @@ texture_hover = ExtResource("3_jo8bp")
 script = ExtResource("4_cgexc")
 
 [node name="ClueLibraryButton3" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 1516.0
 offset_top = 1214.0
 offset_right = 1930.0
@@ -46,6 +48,7 @@ texture_hover = ExtResource("6_5k1e8")
 script = ExtResource("7_d7d5k")
 
 [node name="MapButton3" type="TextureButton" parent="."]
+layout_mode = 0
 offset_left = 1656.0
 offset_top = 1214.0
 offset_right = 2048.0
@@ -53,7 +56,7 @@ offset_bottom = 1606.0
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("8_ptc38")
 texture_hover = ExtResource("9_vvenc")
-script = ExtResource("10_p28h5")
+script = ExtResource("10_dcydb")
 
 [connection signal="pressed" from="Character_Relationship" to="Character_Relationship" method="ChangeScene"]
 [connection signal="pressed" from="ClueLibraryButton3" to="ClueLibraryButton3" method="ChangeScene"]

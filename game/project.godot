@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Game"
-run/main_scene="res://Study(1).tscn"
+run/main_scene="res://Start.tscn"
 config/features=PackedStringArray("4.3", "C#", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GlobalMusic="*res://GlobalMusic.tscn"
 
 [display]
 
