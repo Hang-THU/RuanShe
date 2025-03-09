@@ -1,0 +1,62 @@
+[gd_scene load_steps=11 format=3 uid="uid://df31mfkf5iysg"]
+
+[ext_resource type="Texture2D" uid="uid://cs6gvmphlln1q" path="res://杂物间场景.png" id="1_j4glr"]
+[ext_resource type="Texture2D" uid="uid://bgirhqwlp7owt" path="res://各种按钮/人物关系图按钮(3).bmp" id="2_oibpg"]
+[ext_resource type="Texture2D" uid="uid://b548qmeyvhp3l" path="res://各种按钮/人物关系图按钮.bmp" id="3_cm1r8"]
+[ext_resource type="Script" path="res://CharacterRelationshipButton3.cs" id="4_8wump"]
+[ext_resource type="Texture2D" uid="uid://u7q0115w5mds" path="res://各种按钮/线索库(1)(2).bmp" id="5_jvok4"]
+[ext_resource type="Texture2D" uid="uid://1qy86odbjse5" path="res://各种按钮/线索库(1)(1).bmp" id="6_05epr"]
+[ext_resource type="Script" path="res://ClueLibraryButton3.cs" id="7_exnuw"]
+[ext_resource type="Texture2D" uid="uid://cd8vkogaqosf" path="res://各种按钮/地图(1)(2).bmp" id="8_16rfa"]
+[ext_resource type="Texture2D" uid="uid://cggmwoq3tq18d" path="res://各种按钮/地图(1)(1).bmp" id="9_qxq1y"]
+[ext_resource type="Script" path="res://MapButton3.cs" id="10_fp2gf"]
+
+[node name="Utility_Room(1)" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(900, 675)
+scale = Vector2(1.563, 1.563)
+texture = ExtResource("1_j4glr")
+
+[node name="CharacterRelationshipButton3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1379.0
+offset_top = 1214.0
+offset_right = 1793.0
+offset_bottom = 1628.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("2_oibpg")
+texture_pressed = ExtResource("3_cm1r8")
+script = ExtResource("4_8wump")
+
+[node name="ClueLibraryButton3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1516.0
+offset_top = 1214.0
+offset_right = 1930.0
+offset_bottom = 1629.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("5_jvok4")
+texture_hover = ExtResource("6_05epr")
+script = ExtResource("7_exnuw")
+
+[node name="MapButton3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 1656.0
+offset_top = 1214.0
+offset_right = 2048.0
+offset_bottom = 1606.0
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("8_16rfa")
+texture_hover = ExtResource("9_qxq1y")
+script = ExtResource("10_fp2gf")
+
+[connection signal="pressed" from="CharacterRelationshipButton3" to="CharacterRelationshipButton3" method="ChangeScene"]
+[connection signal="pressed" from="ClueLibraryButton3" to="ClueLibraryButton3" method="ChangeScene"]
+[connection signal="pressed" from="MapButton3" to="MapButton3" method="ChangeScene"]
