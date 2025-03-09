@@ -201,6 +201,7 @@ offset_right = 40.0
 offset_bottom = 40.0
 
 [node name="PB" type="TextureButton" parent="PButton"]
+layout_mode = 0
 offset_left = 779.0
 offset_top = 722.0
 offset_right = 912.0
@@ -210,6 +211,7 @@ texture_hover = ExtResource("12_k7w0y")
 script = ExtResource("14_l3j4f")
 
 [node name="PB2" type="TextureButton" parent="PButton"]
+layout_mode = 0
 offset_left = 909.0
 offset_top = 1028.0
 offset_right = 1026.0
@@ -219,6 +221,7 @@ texture_normal = ExtResource("15_am55k")
 texture_hover = ExtResource("16_pkoow")
 
 [node name="PB3" type="TextureButton" parent="PButton"]
+layout_mode = 0
 offset_left = 336.0
 offset_top = 991.0
 offset_right = 416.0
@@ -228,6 +231,7 @@ texture_normal = ExtResource("17_aipv5")
 texture_hover = ExtResource("18_4xfvm")
 
 [node name="PB4" type="TextureButton" parent="PButton"]
+layout_mode = 0
 offset_left = 347.0
 offset_top = 671.0
 offset_right = 466.0
@@ -237,6 +241,7 @@ texture_normal = ExtResource("19_jr3tw")
 texture_hover = ExtResource("20_pxym3")
 
 [node name="PB5" type="TextureButton" parent="PButton"]
+layout_mode = 0
 offset_left = 1171.0
 offset_top = 663.0
 offset_right = 1251.0
@@ -246,6 +251,7 @@ texture_normal = ExtResource("21_3qbcb")
 texture_hover = ExtResource("22_kyrfd")
 
 [node name="PB6" type="TextureButton" parent="PButton"]
+layout_mode = 0
 offset_left = 905.0
 offset_top = 400.0
 offset_right = 1022.0
@@ -255,6 +261,7 @@ texture_normal = ExtResource("23_udflk")
 texture_hover = ExtResource("24_hwb5a")
 
 [node name="PB7" type="TextureButton" parent="PButton"]
+layout_mode = 0
 offset_left = 558.0
 offset_top = 394.0
 offset_right = 678.0

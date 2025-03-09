@@ -1,0 +1,76 @@
+[gd_scene load_steps=10 format=3 uid="uid://cjuffxboasaw8"]
+
+[ext_resource type="Texture2D" uid="uid://bbqv5t1xja4ga" path="res://结构图.jpg" id="1_0rlv5"]
+[ext_resource type="Texture2D" uid="uid://blieiy22407ga" path="res://书房地图.png" id="2_rlkwa"]
+[ext_resource type="Texture2D" uid="uid://tn23sluumfix" path="res://书房2.png" id="3_o73gf"]
+[ext_resource type="Texture2D" uid="uid://by6ih0lakki31" path="res://湖.png" id="4_76non"]
+[ext_resource type="Texture2D" uid="uid://dovq8kvi2iof5" path="res://客厅.png" id="5_c8mrv"]
+[ext_resource type="Texture2D" uid="uid://s074rt2a7t7f" path="res://餐厅.png" id="6_kr7va"]
+[ext_resource type="Texture2D" uid="uid://s1h2x2b3f5sp" path="res://别墅一层结构图.png" id="7_k5gmn"]
+[ext_resource type="Texture2D" uid="uid://btec8vpqwe5r4" path="res://切页按钮.png" id="8_roht2"]
+[ext_resource type="Script" path="res://NextPage.cs" id="9_1iypm"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="结构图" type="Sprite2D" parent="."]
+position = Vector2(1610.75, 1267)
+scale = Vector2(0.973239, 1.01694)
+
+[node name="结构图2" type="Sprite2D" parent="."]
+position = Vector2(900, 675)
+scale = Vector2(0.544, 0.544)
+texture = ExtResource("1_0rlv5")
+
+[node name="书房" type="TextureButton" parent="结构图2"]
+offset_left = -590.074
+offset_top = 360.294
+offset_right = -498.074
+offset_bottom = 415.294
+scale = Vector2(1.855, 1.855)
+texture_normal = ExtResource("2_rlkwa")
+texture_hover = ExtResource("3_o73gf")
+
+[node name="湖" type="TextureButton" parent="结构图2"]
+offset_left = -564.338
+offset_top = 933.823
+offset_right = -508.338
+offset_bottom = 976.823
+scale = Vector2(2.01, 2.01)
+texture_normal = ExtResource("4_76non")
+
+[node name="客厅" type="TextureButton" parent="结构图2"]
+offset_left = 216.912
+offset_top = 159.926
+offset_right = 314.912
+offset_bottom = 210.926
+scale = Vector2(1.9, 1.9)
+texture_normal = ExtResource("5_c8mrv")
+
+[node name="餐厅" type="TextureButton" parent="结构图2"]
+offset_left = 220.588
+offset_top = -555.147
+offset_right = 314.588
+offset_bottom = -500.147
+scale = Vector2(1.745, 1.745)
+texture_normal = ExtResource("6_kr7va")
+
+[node name="别墅一层结构图" type="TextureButton" parent="结构图2"]
+offset_left = -283.088
+offset_top = 1099.26
+offset_right = -4.08823
+offset_bottom = 1155.26
+scale = Vector2(2.085, 2.085)
+texture_normal = ExtResource("7_k5gmn")
+
+[node name="切页按钮" type="TextureButton" parent="结构图2"]
+offset_left = 1391.54
+offset_top = -183.824
+offset_right = 1903.54
+offset_bottom = 328.176
+scale = Vector2(0.47, 0.47)
+texture_normal = ExtResource("8_roht2")
+script = ExtResource("9_1iypm")
+
+[connection signal="pressed" from="结构图2/切页按钮" to="结构图2/切页按钮" method="ChangeScene"]
